@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020. rogergcc
+  -->
+
+<androidx.core.widget.NestedScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/facnroll_white"
+    tools:context=".FragActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/facnroll_white"
+
+        android:orientation="vertical"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/horizontal_dashboard"
+            android:paddingTop="@dimen/fab_margin"
+            android:paddingRight="@dimen/horizontal_dashboard"
+            android:background="@color/facnroll_dark"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="40"
+                android:fontFamily="@font/bariol_bold"
+
+                android:textColor="@color/facnroll_white"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="60"
+                android:src="@drawable/glove_logo">
+
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/facnroll_white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@null">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@color/facnroll"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_firstcoureses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/horizontal_dashboard"
+                            android:layout_marginTop="@dimen/normalPadding"
+                            android:layout_marginRight="@dimen/horizontal_dashboard"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.cardview.widget.CardView
+
+                                android:layout_width="0dp"
+                                android:layout_height="140dp"
+
+                                android:layout_marginTop="@dimen/horizontal_card"
+                                android:layout_marginEnd="@dimen/horizontal_card"
+                                android:layout_marginRight="@dimen/horizontal_card"
+                                android:layout_marginBottom="@dimen/horizontal_card"
+
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true"
+
+                                android:foreground="?attr/selectableItemBackground"
+
+
+                                app:cardCornerRadius="@dimen/card_radius"
+                                app:cardElevation="0dp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/today_scan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/normalPadding"
+                                        android:layout_marginTop="@dimen/top_text_card"
+
+                                        android:layout_marginRight="@dimen/normalPadding"
+
+
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="684"
+                                        android:textColor="@color/darkTextColor"
+                                        android:textSize="50sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/normalPadding"
+                                        android:layout_marginTop="@dimen/top_text_subtitle_card"
+
+                                        android:layout_marginRight="@dimen/normalPadding"
+                                        android:layout_marginBottom="@dimen/normalPadding"
+
+                                        android:fontFamily="@font/bariol_bold"
+
+                                        android:text="오늘스캔횟수"
+                                        android:textColor="@color/darkTextColor"
+                                        android:textSize="20sp" />
+
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+
+                                android:layout_width="0dp"
+
+                                android:layout_height="140dp"
+
+                                android:layout_marginLeft="@dimen/horizontal_card"
+                                android:layout_marginTop="@dimen/horizontal_card"
+                                android:layout_marginBottom="@dimen/horizontal_card"
+
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardCornerRadius="@dimen/card_radius"
+                                app:cardElevation="@dimen/card_course_dashboard_elevation">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/yesterday_scan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/normalPadding"
+                                        android:layout_marginTop="@dimen/top_text_card"
+
+                                        android:layout_marginRight="@dimen/normalPadding"
+
+
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="285"
+                                        android:textColor="@color/darkTextColor"
+                                        android:textSize="50sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/normalPadding"
+                                        android:layout_marginTop="@dimen/top_text_subtitle_card"
+
+                                        android:layout_marginRight="@dimen/normalPadding"
+                                        android:layout_marginBottom="@dimen/normalPadding"
+
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="어제스캔횟수"
+                                        android:textColor="@color/darkTextColor"
+                                        android:textSize="20sp" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_secondcoureses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/horizontal_dashboard"
+                            android:layout_marginTop="@dimen/normalPadding"
+                            android:layout_marginRight="@dimen/horizontal_dashboard"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <androidx.cardview.widget.CardView
+
+                                android:layout_width="0dp"
+                                android:layout_height="140dp"
+
+                                android:layout_marginTop="@dimen/horizontal_card"
+                                android:layout_marginRight="@dimen/horizontal_card"
+                                android:layout_marginBottom="@dimen/horizontal_card"
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true"
+
+                                android:foreground="?attr/selectableItemBackground"
+
+
+                                app:cardCornerRadius="@dimen/card_radius"
+                                app:cardElevation="0dp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/average_scan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/normalPadding"
+                                        android:layout_marginTop="@dimen/top_text_card"
+
+                                        android:layout_marginRight="@dimen/normalPadding"
+
+
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="112"
+                                        android:textColor="@color/darkTextColor"
+                                        android:textSize="50sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/normalPadding"
+                                        android:layout_marginTop="@dimen/top_text_subtitle_card"
+
+                                        android:layout_marginRight="@dimen/normalPadding"
+                                        android:layout_marginBottom="@dimen/normalPadding"
+
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="평균스캔횟수"
+                                        android:textColor="@color/darkTextColor"
+                                        android:textSize="20sp" />
+
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+
+                                android:layout_width="0dp"
+
+                                android:layout_height="140dp"
+
+                                android:layout_marginLeft="@dimen/horizontal_card"
+                                android:layout_marginTop="@dimen/horizontal_card"
+                                android:layout_marginBottom="@dimen/horizontal_card"
+
+
+                                android:layout_weight="1"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:cardCornerRadius="@dimen/card_radius"
+                                app:cardElevation="@dimen/card_course_dashboard_elevation">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/total_scan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/normalPadding"
+                                        android:layout_marginTop="@dimen/top_text_card"
+
+                                        android:layout_marginRight="@dimen/normalPadding"
+
+
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="2410"
+                                        android:textColor="@color/darkTextColor"
+                                        android:textSize="50sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/normalPadding"
+                                        android:layout_marginTop="@dimen/top_text_subtitle_card"
+
+                                        android:layout_marginRight="@dimen/normalPadding"
+                                        android:layout_marginBottom="@dimen/normalPadding"
+
+                                        android:fontFamily="@font/bariol_bold"
+                                        android:text="누적스캔횟수"
+                                        android:textColor="@color/darkTextColor"
+                                        android:textSize="20sp" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#EE924F"
+                android:gravity="center"
+                android:text="스캔 분포"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:backgroundTint="@color/facnroll_dark"/>
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/text_border"
+                android:backgroundTint="#F3EAEA"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent">-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:weightSum="100"-->
+    <!--        android:background="#EFEFEF">-->
+
+
+    <!--    </LinearLayout>-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:weightSum="3"-->
+<!--        android:orientation="vertical">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:weightSum="2">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="오늘 스캔 횟수"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:background="#EE924F"-->
+<!--                        android:gravity="center"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/today_scan"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/text_border"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="50dp" />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="어제 스캔 횟수"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20dp"-->
+<!--                        android:background="#EE924F"-->
+<!--                        android:gravity="center"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/yesterday_scan"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/text_border"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="50dp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="horizontal">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:weightSum="2">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#EE924F"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="평균 스캔 횟수"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/average_scan"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/text_border"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="50dp" />-->
+<!--                </LinearLayout>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:background="#EE924F"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="누적 스캔 횟수"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20dp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/total_scan"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@drawable/text_border"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="50dp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:background="#EE924F"-->
+<!--                android:gravity="center"-->
+<!--                android:text="스캔 분포"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20dp" />-->
+
+<!--            <WebView-->
+<!--                android:id="@+id/webview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:background="@drawable/text_border"/>-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

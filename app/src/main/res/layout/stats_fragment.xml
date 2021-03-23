@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="100">
+<!-- 날짜 선택 시작-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_select_users"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+
+                android:background="@color/facnroll"
+                android:fontFamily="@font/bariol_bold"
+
+                android:padding="4dp"
+                android:text="사용자 선택" />
+
+            <TextView
+                android:id="@+id/start_dttm"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="30"
+                android:background="@drawable/text_border"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="-10dp"
+                android:gravity="center"
+                android:hint="시작일자"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+
+                android:text="~" />
+
+            <TextView
+                android:id="@+id/end_dttm"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:background="@drawable/text_border"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="-10dp"
+                android:gravity="center"
+                android:hint="종료일자"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="10"
+                android:scaleType="fitXY"
+                android:src="@drawable/search" />
+        </LinearLayout>
+
+
+
+<!--밑에 선택한거 나타내게  할려면 이거 주석  풀고 아이디 맞춰야 됨 -->
+<!--        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/userlist"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dip"
+
+                android:text="Select Receivers" />
+
+
+
+
+        </LinearLayout>-->
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="45"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/text_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#EE924F"
+                    android:gravity="center"
+                    android:text="기간별 스캔 통계"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <WebView
+                    android:id="@+id/webview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/text_border"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="45"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/text_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#EE924F"
+                    android:gravity="center"
+                    android:text="모드별 스캔 통계"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <WebView
+                    android:id="@+id/webview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/text_border"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="#EFEFEF">
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/contentBodyColor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:text="Settings" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/profileCircleImageView"-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_marginTop="15dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+
+<!--                        app:civ_border_color="@color/imageBorderColor"-->
+<!--                        app:civ_border_width="2dp"-->
+<!--                        tools:ignore="MissingClass" />-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    >
+
+                    <TextView
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:id="@+id/user_info"
+
+                    android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/icon_user"
+                        android:text="강나래"
+                        android:textSize="25dp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!--        <Switch-->
+                <!--            android:id="@+id/darkModeSwitch"-->
+                <!--            style="@style/settingsText"-->
+                <!--            android:drawableLeft="@drawable/ic_dark_mode"-->
+                <!--            android:text="Dark Mode" />-->
+                <TextView
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="DEVICE INFO" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    >
+
+                    <TextView
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/icon_line"
+                        android:text="모델명  " />
+
+                    <TextView
+                        android:id="@+id/device_name"
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="moel_here"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    >
+
+                    <TextView
+
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/icon_check"
+                        android:text="S/N    " />
+
+                    <TextView
+                        android:id="@+id/device_sn"
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="s/n here"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    >
+
+                    <TextView
+
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/icon_control"
+                        android:text="mac주소" />
+
+                    <TextView
+                        android:id="@+id/device_mac"
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="mac adr here"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"><![CDATA[
+                    >
+
+                    ]]>
+
+                    <TextView
+
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/icon_battery"
+                        android:text="battery" />
+
+                    <TextView
+                        android:id="@+id/device_battery"
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="battery here"
+                        />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    >
+
+                    <TextView
+
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/icon_cloud"
+                        android:text="금일 바코드 스캔 횟수" />
+
+                    <TextView
+
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="scan today here"
+                        />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    >
+
+                    <TextView
+
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/icon_cloud"
+                        android:text="누적 바코드 스캔 횟수" />
+
+                    <TextView
+
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="scan cum here"
+                        />
+                </LinearLayout>
+
+
+
+                <TextView
+                    style="@style/viewParent.headerText.settingsMiniTitle"
+                    android:text="DEVICE INFO"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/device_mode">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+
+
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/bluetooth"
+                        android:text="모드 설정" />
+
+                    <ImageView
+                        style="@style/viewParent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_more" />
+                    </RelativeLayout>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/device_time">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/icon_timer"
+                    android:text="시간 설정" />
+                    <ImageView
+                        style="@style/viewParent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_more" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+                <!--        <TextView-->
+                <!--            style="@style/viewParent.headerText.settingsTextIcon"-->
+                <!--            android:drawableLeft="@drawable/ic_logout"-->
+                <!--            android:text="Logout" />-->
+                <Button
+                    android:id="@+id/sign_out"
+
+                    style="@style/df4_btn_danger"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/facnroll_dark"
+                    android:text="로그아웃" />
+
+                <!--        <TextView-->
+                <!--            style="@style/viewParent.headerText.settingsMiniTitle"-->
+                <!--            android:text="App ver 2.0.1"-->
+                <!--            android:textAlignment="center"/>-->
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".FragActivity">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/contentBodyColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <TextView
+                style="@style/viewParent.headerText"
+                android:text="Settings" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileCircleImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/user_bg"
+                    app:civ_border_color="@color/imageBorderColor"
+                    app:civ_border_width="2dp"
+                    tools:ignore="MissingClass" />
+
+
+                <TextView
+                    android:id="@+id/user_info"
+                    style="@style/viewParent.headerText"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toRightOf="@id/profileCircleImageView"
+                    android:text="강나래"
+                    android:textSize="21sp" />
+
+                <ImageView
+                    style="@style/viewParent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_more" />
+
+            </RelativeLayout>
+
+            &lt;!&ndash;        <Switch&ndash;&gt;
+            &lt;!&ndash;            android:id="@+id/darkModeSwitch"&ndash;&gt;
+            &lt;!&ndash;            style="@style/settingsText"&ndash;&gt;
+            &lt;!&ndash;            android:drawableLeft="@drawable/ic_dark_mode"&ndash;&gt;
+            &lt;!&ndash;            android:text="Dark Mode" />&ndash;&gt;
+            <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="DEVICE INFO" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                  >
+
+                <TextView
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/device_bg"
+                    android:text="모델명  " />
+
+                <TextView
+                    android:id="@+id/device_name"
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="moel_here"
+                   />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                >
+
+                <TextView
+
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/pencil_bg"
+                    android:text="S/N    " />
+
+                <TextView
+                    android:id="@+id/device_sn"
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="s/n here"
+                   />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                >
+
+                <TextView
+
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/data_bg"
+                    android:text="mac주소" />
+
+                <TextView
+                    android:id="@+id/device_mac"
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="mac adr here"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                >
+
+                <TextView
+
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/battery_bg"
+                    android:text="battery" />
+
+                <TextView
+                    android:id="@+id/device_battery"
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="battery here"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                >
+
+                <TextView
+
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/pencil_bg"
+                    android:text="금일 바코드 스캔 횟수" />
+
+                <TextView
+
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="scan today here"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                >
+
+                <TextView
+
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/pencil_bg"
+                    android:text="누적 바코드 스캔 횟수" />
+
+                <TextView
+
+                    style="@style/viewParent.headerText.settingsTextIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="scan cum here"
+                    />
+            </LinearLayout>
+
+
+
+            <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="DEVICE INFO"/>
+
+            <TextView
+
+                android:id="@+id/device_mode"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/camera_bg"
+
+                android:text="모드 설정" />
+
+            <TextView
+                android:id="@+id/device_time"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/setting_bg"
+                android:layout_marginTop="10dp"
+                android:text="시간 설정" />
+            &lt;!&ndash;        <TextView&ndash;&gt;
+            &lt;!&ndash;            style="@style/viewParent.headerText.settingsTextIcon"&ndash;&gt;
+            &lt;!&ndash;            android:drawableLeft="@drawable/ic_logout"&ndash;&gt;
+            &lt;!&ndash;            android:text="Logout" />&ndash;&gt;
+            <Button
+                android:id="@+id/sign_out"
+
+                style="@style/df4_btn_danger"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:background="@color/facnroll_dark"
+                android:text="로그아웃" />
+
+    &lt;!&ndash;        <TextView&ndash;&gt;
+    &lt;!&ndash;            style="@style/viewParent.headerText.settingsMiniTitle"&ndash;&gt;
+    &lt;!&ndash;            android:text="App ver 2.0.1"&ndash;&gt;
+    &lt;!&ndash;            android:textAlignment="center"/>&ndash;&gt;
+
+        </LinearLayout>
+    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--_______________________________________-->
+
+
+
+
+
+<!--_______________________________-->
+<!--
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="#EFEFEF">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="93"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:weightSum="30"
+                    android:padding="5dp"
+                    android:background="@drawable/setting_border">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="10"
+                        android:layout_marginTop="3dp"
+                        android:text="PROFILE"
+                        android:textColor="#000000"
+                        android:textSize="18dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/setting_border_row"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:padding="7dp">
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="사용자"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/user_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="이준희(admin)"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/setting_border"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:weightSum="130">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_weight="10"
+                        android:text="DEVICE INFO"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/setting_border_row"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="7dp">
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="모델명"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/device_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="G2-BASIC"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/setting_border_row"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="7dp">
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="S/N"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/device_sn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="G2-4CA223"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/setting_border_row"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="7dp">
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="MAC 주소"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/device_mac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="00:19:01:4C:A2:23"
+                            android:textSize="17dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/setting_border_row"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="7dp">
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="배터리"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/device_battery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="100%"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/setting_border_row"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="7dp">
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="금일 바코드 스캔 횟수"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/today_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="30회"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/setting_border_row"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="누적 바코드 스캔 횟수"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/total_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="100회"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="vertical"
+                    android:weightSum="50"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:background="@drawable/setting_border">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="10"
+                        android:layout_marginTop="3dp"
+                        android:text="SETTING"
+                        android:textColor="#000000"
+                        android:textSize="18dp"/>
+                    <LinearLayout
+                        android:id="@+id/device_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/setting_border_row"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:layout_marginTop="5dp"
+                        android:padding="7dp">
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="모드설정"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/right_arrow"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/device_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="20"
+                        android:background="@drawable/setting_border_row"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        android:padding="7dp">
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="시간설정"
+                            android:textSize="17dp"
+                            android:gravity="center_vertical"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/right_arrow"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <Button
+                android:id="@+id/sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:text="로그아웃"
+                android:textStyle="bold"
+                android:background="@drawable/button_border"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>-->
